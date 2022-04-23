@@ -20,6 +20,6 @@ class User{
       get getDateCreated(){
         return this.dateCreated
       }
-    
+    //prueba
  }
 module.exports = User
