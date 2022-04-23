@@ -1,6 +1,7 @@
 const User = require ('./../../app/models/User')
 
 describe("Prueba de jest", () =>{
+    
     test("Prueba 1", ()=> {
         const user = new User (1, "tdgarza", "Tomas", "Bio")
         expect(user.id).toBe(1)
@@ -24,6 +25,8 @@ describe("Prueba de jest", () =>{
         const user = new User (1, "tdgarza", "Daniel", "Bio")
         user.setUsername = "tdgarzam"
         expect(user.username).toBe("tdgarzam")     
-
+       
+     user.setBio = "New bio"
+		expect(user.bio).toBe("New bio")
     })
 })
